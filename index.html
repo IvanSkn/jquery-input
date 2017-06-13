@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Plugin</title>
+        <script src="script/jquery3.1.1.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="script/jquery.form.js"></script>
+    </head>
+    <body>
+        <div id="newElement" class="text-center"></div>
+    </body>
+    <script>
+        $('#newElement').newPlugin({
+            buttonText: 'Send',
+            inputs: {'login':['text', 'login', 'Ваш логин'], 'password': ['password', 'password', 'Введие пароль']}
+        });
+    </script>
+</html>
